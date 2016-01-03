@@ -1,7 +1,7 @@
 # ImageGarage
 
 It is a simple image hosting website built on MS Azure services as a class coursework.  
-See images **Demo #.jpg** in the root.
+See **Demo.pdf** in the root.
 
 Since this project evolved as we learned more Azure topics in the class I have kept separate branches as different checkpoints.  
 
