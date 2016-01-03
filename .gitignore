@@ -3,3 +3,8 @@ App - Copy.config
 ServiceConfiguration.Cloud - Copy.cscfg
 ServiceConfiguration.Local - Copy.cscfg
 Startup.Auth - Copy.cs
+Web.config
+App.config
+ServiceConfiguration.Cloud.cscfg
+ServiceConfiguration.Local.cscfg
+Startup.Auth.cs
