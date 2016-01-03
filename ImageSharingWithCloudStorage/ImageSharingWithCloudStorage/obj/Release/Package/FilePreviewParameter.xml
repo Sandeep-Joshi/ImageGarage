@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="imagegarage" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\joshi\\Documents\\Visual\ Studio\ 2015\\Projects\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\joshi\\Documents\\Visual\ Studio\ 2015\\Projects\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="SQLServerExpress-Web.config Connection String" description="SQLServerExpress Connection String used in web.config by the application to access the database." value="Server=(localdb)\MSSQLLocalDB;Integrated Security=true;Initial Catalog=ImageSharingWithAuth;AttachDBFilename=|DataDirectory|\ImageSharingWithAuth.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\joshi\\Documents\\Visual\ Studio\ 2015\\Projects\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SQLServerExpress']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." value="Server=tcp:stevens.database.windows.net,1433;Database=imagesh;User ID=sandeep@stevens;Password=cs526Azure;Encrypt=True;TrustServerCertificate=False;Connection Timeout=900;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\joshi\\Documents\\Visual\ Studio\ 2015\\Projects\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AzureSQLDatabase-Web.config Connection String" description="AzureSQLDatabase Connection String used in web.config by the application to access the database." value="Server=tcp:stevens.database.windows.net,1433;Database=imagesh;User ID=sandeep@stevens;Password=cs526Azure;Encrypt=True;TrustServerCertificate=False;Connection Timeout=900;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\joshi\\Documents\\Visual\ Studio\ 2015\\Projects\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureSQLDatabase']/@connectionString" />
+  </parameter>
+</parameters>

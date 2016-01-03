@@ -1,0 +1,31 @@
+﻿@model ImageSharingWithCloudStorage.Models.ImagesView
+
+@{ViewBag.Title = "Delete Image";}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("Delete", "Images", FormMethod.Post); }
+
+<fieldset>
+    <legend>Enter Image Information</legend>
+    @Html.AntiForgeryToken()
+    <!---Html.HiddenFor(m => m.Id)--->
+
+    @*<p><img src="@Url.Content("~/Content/Images/img-" + @Model.Id + ".jpg")" /></p>*@
+    <p><img src="@Model.Uri" /></p>
+    <p>Image id: @Model.Id </p>
+    <p>Tag: @Model.Tagname</p>
+    <p>Caption: @Model.Caption </p>
+    <p>
+        Description:
+        <br />
+        @Model.Description
+    </p>
+
+    <p>Date taken: @Model.DateTaken.ToShortDateString()</p>
+    <p>Uploader: @Model.uploader()</p>
+
+    <p>
+        <input type="submit" value="Confirm Delete?" />
+    </p>
+</fieldset>

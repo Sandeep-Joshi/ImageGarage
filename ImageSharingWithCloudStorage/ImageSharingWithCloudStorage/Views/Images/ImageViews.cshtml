@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ImageSharingWithCloudStorage.Models.LogEntry>
+@{
+    ViewBag.Title = "Image Viewing Activity";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <tr>
+        <th>Caption</th>
+        <th>User</th>
+        <th>Time</th>
+    </tr>
+
+    @foreach (var entry in Model)
+    {
+    <tr>
+        <td>@Html.ActionLink(entry.Caption, "Details", "Images", new{Id=entry.ImageId}, null)</td>
+        <td>@entry.userName()</td>
+        <td>@string.Format("{0:t} {1:d}-{2:d}-{3:d}", entry.EntryDate, entry.PartitionKey.Substring(0,2), entry.PartitionKey.Substring(0,2), entry.PartitionKey.Substring(2,2), entry.PartitionKey.Substring(4,4))
+            <br />
+                @entry.RowKey
+            <br />
+        </td>
+    </tr>
+    }
+
+</table>

@@ -1,0 +1,44 @@
+﻿@model List<ImageSharingWithCloudStorage.Models.SelectItemView>
+
+    @{
+    ViewBag.Title = "Approve Images";
+    }
+
+    <h2>@ViewBag.Title</h2>
+
+    @{ Html.BeginForm("Approve", "Images", FormMethod.Post);}
+
+    <fieldset>
+        <legend>Approve Images</legend>
+
+        @Html.AntiForgeryToken()
+
+        <table class="gridTable">
+            <tr>
+                <th>Approve</th>
+                <th>Image Caption</th>
+            </tr>
+
+            @for (var i = 0; i < Model.Count(); i++)
+            {
+            <tr>
+                <td>
+                    @Html.HiddenFor(imgs => imgs[i].Id)
+                    @Html.CheckBoxFor(imgs => imgs[i].Checked)
+                </td>
+                <td>
+                    @Html.DisplayFor(imgs => imgs[i].Name)
+                </td>
+            </tr>
+            }
+
+        </table>
+
+        <p>
+            <input type="submit" value="submit" />
+        </p>
+
+    </fieldset>
+
+    @ViewBag.Message
+    @{Html.EndForm();}
