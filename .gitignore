@@ -1,0 +1,5 @@
+Web - Copy.config
+App - Copy.config
+ServiceConfiguration.Cloud - Copy.cscfg
+ServiceConfiguration.Local - Copy.cscfg
+Startup.Auth - Copy.cs

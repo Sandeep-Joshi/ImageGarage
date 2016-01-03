@@ -61,8 +61,8 @@ namespace ImageSharingWebRole
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "281654869017-h66m9mghp4ncqf9ltaun0mbjrh1h7j0s.apps.googleusercontent.com",
-                ClientSecret = "Aw2QOzxA4nI_19FhhLk8jE5s",
+                ClientId = "<some hashcode here>.apps.googleusercontent.com",
+                ClientSecret = "...",
                 CallbackPath = new PathString("/index")
             });
         }
