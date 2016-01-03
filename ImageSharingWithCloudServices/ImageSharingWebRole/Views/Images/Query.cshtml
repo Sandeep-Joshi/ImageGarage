@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Find an image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("DoQuery", "Home", FormMethod.Get);}
+
+<fieldset>
+    @Html.AntiForgeryToken()
+    <legend>Enter image information</legend>
+    <p>Image id: @Html.TextBox("Id")</p>
+    <p>
+        <input type="submit" value="Query" />
+    </p>
+</fieldset>
+
+@ViewBag.Message
+
+@{ Html.EndForm();}

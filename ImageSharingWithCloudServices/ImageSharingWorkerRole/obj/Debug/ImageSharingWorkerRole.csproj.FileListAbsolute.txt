@@ -1,0 +1,2 @@
+C:\Users\joshi\documents\visual studio 2015\Projects\ImageSharingWithCloudServices\ImageSharingWorkerRole\obj\Debug\ImageSharingWorkerRole.csproj.App.config
+C:\Users\joshi\documents\visual studio 2015\Projects\ImageSharingWithCloudServices\ImageSharingWorkerRole\obj\Debug\ImageSharingWorkerRole.csprojResolveAssemblyReference.cache
