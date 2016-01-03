@@ -1,2 +1,0 @@
-C:\Users\joshi\documents\visual studio 2015\Projects\ImageSharingWithCloudServices\ImageSharingWebRole.Tests\obj\Debug\ImageSharingWebRole.Tests.csproj.App.config
-C:\Users\joshi\documents\visual studio 2015\Projects\ImageSharingWithCloudServices\ImageSharingWebRole.Tests\obj\Debug\ImageSharingWebRole.Tests.csprojResolveAssemblyReference.cache
